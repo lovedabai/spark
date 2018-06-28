@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<appender name="console" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout"/>
+	</appender>
+	
+	<appender name="SF.TRACE" class="org.apache.log4j.RollingFileAppender">
+        <param name="datePattern" value="'.'yyyy-MM-dd" />
+		<param name="file" value="./logs/trace.log" />
+		<param name="maxBackupIndex" value="3" />
+		<!--<param name="bufferedIO" value="true" />
+		<param name="bufferSize" value="4096" />-->
+		<layout class="org.apache.log4j.PatternLayout">
+		</layout>
+	</appender> 
+	
+	<appender name="SF.SYSTEM" class="org.apache.log4j.RollingFileAppender">
+        <param name="datePattern" value="'.'yyyy-MM-dd" />
+		<param name="file" value="./logs/system.log" />
+		<param name="maxBackupIndex" value="7" />
+		<!--<param name="bufferedIO" value="true" />
+		<param name="bufferSize" value="4096" />-->
+		<layout class="org.apache.log4j.PatternLayout">
+ 		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="levelMin" value="trace" />
+			<param name="levelMax" value="info" />
+			<param name="acceptOnMatch" value="true" />
+		</filter>
+	</appender>
+	
+	<appender name="SF.BIZ" class="org.apache.log4j.RollingFileAppender">
+        <param name="datePattern" value="'.'yyyy-MM-dd" />
+		<param name="file" value="./logs/biz.log" />
+		<!--文件保存天数,默认为3天-->
+		<param name="maxBackupIndex" value="7" />
+		<!--<param name="bufferedIO" value="true" />
+		<param name="bufferSize" value="4096" />-->
+		<layout class="org.apache.log4j.PatternLayout" >
+		</layout>
+	</appender>
+	
+	<appender name="SF.ERROR" class="org.apache.log4j.RollingFileAppender">
+        <param name="datePattern" value="'.'yyyy-MM-dd" />
+		<param name="file" value="./logs/error.log" />
+		<!--文件保存天数,默认为3天-->
+		<param name="maxBackupIndex" value="7" />
+		<layout class="org.apache.log4j.PatternLayout">
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="levelMin" value="error" />
+			<param name="levelMax" value="error" />
+			<param name="acceptOnMatch" value="true" />
+		</filter>
+	</appender>
+	
+	<appender name="SF.AUDIT" class="org.apache.log4j.RollingFileAppender">
+        <param name="datePattern" value="'.'yyyy-MM-dd" />
+		<param name="file" value="./logs/audit.log" />
+		<param name="maxBackupIndex" value="7" />
+		<layout class="org.apache.log4j.PatternLayout">
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="levelMin" value="warn" />
+			<param name="levelMax" value="warn" />
+			<param name="acceptOnMatch" value="true" />
+		</filter>
+	</appender>
+	
+	<appender name="SF.POOL" class="org.apache.log4j.RollingFileAppender">
+        <param name="datePattern" value="'.'yyyy-MM-dd" />
+		<param name="file" value="./logs/pool.log" />
+		<param name="maxBackupIndex" value="3" />
+		<layout class="org.apache.log4j.PatternLayout">
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+		</filter>
+	</appender>
+	
+	<appender name="SF.MONITOR" class="org.apache.log4j.RollingFileAppender">
+        <param name="datePattern" value="'.'yyyy-MM-dd" />
+		<param name="file" value="./logs/monitor.log" />
+		<param name="maxBackupIndex" value="3" />
+		<layout class="org.apache.log4j.PatternLayout">
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+		</filter>
+	</appender>
+	
+	<logger name="SF.TRACE" additivity="false">
+		<level value="INFO" />
+ 		<appender-ref ref="SF.TRACE" />
+	</logger>
+	
+	<logger name="SF.SYSTEM" additivity="false">
+		<level value="INFO" />
+ 		<appender-ref ref="SF.SYSTEM" />
+  		<appender-ref ref="SF.ERROR" />  
+	</logger>
+	
+	<logger name="SF.BIZ" additivity="false">
+		<level value="INFO" />
+ 		<appender-ref ref="SF.BIZ" />
+	</logger>
+	
+	<logger name="org.apache" additivity="false">
+		<level value="ERROR" />
+		<appender-ref ref="console" />
+	</logger>
+	
+	<logger name="com.alibaba.dubbo.common.threadpool.monitor.MonitorPoolRunnable" additivity="false">
+		<level value="info" />
+		<appender-ref ref="SF.POOL" />
+	</logger>
+	
+	<logger name="com.alibaba.dubbo.monitor.dubbo.sfextend.SfMonitorExtend" additivity="false">
+		<level value="info" />
+		<appender-ref ref="SF.MONITOR" />
+	</logger>
+	
+	<!--针对，request以及reponse的信息配置输出级别，生产线请配置为error-->
+	<logger name="com.alibaba.dubbo.rpc.protocol.rest.support" additivity="true">
+	    <level value="info"/>
+	    <appender-ref ref="console" />
+	</logger>
+		
+	<!-- 在开发和测试环境启用,输出sql -->
+	<logger name="com.sf.sgs.smp.dao.mapper" additivity="true">
+        <level value="DEBUG"/>
+	</logger>
+	
+	<root>
+		<priority value="info" />
+		<!--开发过程可以开启  <appender-ref ref="console" />，生产要求屏蔽-->
+		<appender-ref ref="console" />
+		<appender-ref ref="SF.SYSTEM" />
+		<appender-ref ref="SF.ERROR" />
+		<appender-ref ref="SF.AUDIT" />
+	</root>
+
+</log4j:configuration>

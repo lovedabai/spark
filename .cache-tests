@@ -1,0 +1,78 @@
+format version: 5
+output mode:
+1 items
+0 -> multiple
+output directories:
+2 items
+D:\new-workplace\spark\src\test\java -> D:\new-workplace\spark\target\test-classes
+D:\new-workplace\spark\src\test\resources -> D:\new-workplace\spark\target\classes
+compile options:
+8 items
+0 -> -javabootclasspath
+1 -> E:\Java\jre\lib\resources.jar;E:\Java\jre\lib\rt.jar;E:\Java\jre\lib\jsse.jar;E:\Java\jre\lib\jce.jar;E:\Java\jre\lib\charsets.jar;E:\Java\jre\lib\jfr.jar;E:\Java\jre\lib\ext\access-bridge-32.jar;E:\Java\jre\lib\ext\cldrdata.jar;E:\Java\jre\lib\ext\dnsns.jar;E:\Java\jre\lib\ext\jaccess.jar;E:\Java\jre\lib\ext\jfxrt.jar;E:\Java\jre\lib\ext\localedata.jar;E:\Java\jre\lib\ext\nashorn.jar;E:\Java\jre\lib\ext\sunec.jar;E:\Java\jre\lib\ext\sunjce_provider.jar;E:\Java\jre\lib\ext\sunmscapi.jar;E:\Java\jre\lib\ext\sunpkcs11.jar;E:\Java\jre\lib\ext\zipfs.jar
+2 -> -javaextdirs
+3 ->  
+4 -> -bootclasspath
+5 -> E:\eclipse-jdk1.8\plugins\org.scala-lang.scala-library_2.11.8.v20160304-115712-1706a37eb8.jar
+6 -> -encoding
+7 -> UTF-8
+javac options:
+0 items
+compiler version:
+1 items
+0 -> 2.11.8
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> false
+products:
+0 items
+binary dependencies:
+0 items
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+0 items
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+0 items
+used names:
+0 items
+product stamps:
+0 items
+source stamps:
+1 items
+D:\new-workplace\spark\src\test\java\com\icey\AppTest.java -> hash(8b1c785433e3387684714d04110277aee3aaa175)
+binary stamps:
+0 items
+class names:
+0 items
+internal apis:
+1 items
+D:\new-workplace\spark\src\test\java\com\icey\AppTest.java -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHC4IVHqAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZEV75tV1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAnNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+ABp4cHQAJUQ6XG5ldy13b3JrcGxhY2Vcc3BhcmtcdGFyZ2V0XGNsYXNzZXN0AClEOlxuZXctd29ya3BsYWNlXHNwYXJrXHNyY1x0ZXN0XHJlc291cmNlc3NxAH4AGXQAKkQ6XG5ldy13b3JrcGxhY2Vcc3BhcmtcdGFyZ2V0XHRlc3QtY2xhc3Nlc3QAJEQ6XG5ldy13b3JrcGxhY2Vcc3Bhcmtcc3JjXHRlc3RcamF2YXVyAAJbQqzzF/gGCFTgAgAAeHAAAAAUixx4VDPjOHaEcU0EEQJ3ruOqoXU=
+external apis:
+0 items
+source infos:
+1 items
+D:\new-workplace\spark\src\test\java\com\icey\AppTest.java -> 
+AAAAAAAAAAA=
+compilations:
+4 items
+0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZEU9HMZ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAKkQ6XG5ldy13b3JrcGxhY2Vcc3BhY2tcdGFyZ2V0XHRlc3QtY2xhc3Nlc3QAJEQ6XG5ldy13b3JrcGxhY2Vcc3BhY2tcc3JjXHRlc3RcamF2YQ==
+1 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZEVEWDt1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAKkQ6XG5ldy13b3JrcGxhY2Vcc3BhY2tcdGFyZ2V0XHRlc3QtY2xhc3Nlc3QAJEQ6XG5ldy13b3JrcGxhY2Vcc3BhY2tcc3JjXHRlc3RcamF2YQ==
+2 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZEVJAo51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAnNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAJUQ6XG5ldy13b3JrcGxhY2Vcc3BhY2tcdGFyZ2V0XGNsYXNzZXN0AClEOlxuZXctd29ya3BsYWNlXHNwYWNrXHNyY1x0ZXN0XHJlc291cmNlc3NxAH4ABXQAKkQ6XG5ldy13b3JrcGxhY2Vcc3BhY2tcdGFyZ2V0XHRlc3QtY2xhc3Nlc3QAJEQ6XG5ldy13b3JrcGxhY2Vcc3BhY2tcc3JjXHRlc3RcamF2YQ==
+3 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABZEV75tV1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAnNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAJUQ6XG5ldy13b3JrcGxhY2Vcc3BhcmtcdGFyZ2V0XGNsYXNzZXN0AClEOlxuZXctd29ya3BsYWNlXHNwYXJrXHNyY1x0ZXN0XHJlc291cmNlc3NxAH4ABXQAKkQ6XG5ldy13b3JrcGxhY2Vcc3BhcmtcdGFyZ2V0XHRlc3QtY2xhc3Nlc3QAJEQ6XG5ldy13b3JrcGxhY2Vcc3Bhcmtcc3JjXHRlc3RcamF2YQ==
